@@ -16,7 +16,8 @@
   "version": "0.2.68",
   "main": "index.js",
   "scripts": {
-    "prepare": "exit 0"
+    "prepare": "yarn run snyk-protect && exit 0",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@truffle/artifactor": "^4.0.119",
@@ -27,7 +28,8 @@
     "ganache-core": "2.13.0",
     "node-ipc": "^9.1.1",
     "source-map-support": "^0.5.19",
-    "web3": "1.5.2"
+    "web3": "1.5.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "debug": "^4.3.1"
@@ -35,5 +37,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "6b84be7849142588ef2e3224d8a9d7c2ceeb6e4a"
+  "gitHead": "6b84be7849142588ef2e3224d8a9d7c2ceeb6e4a",
+  "snyk": true
 }
