@@ -17,8 +17,9 @@
     "truffle-exec": "./exec.js"
   },
   "scripts": {
-    "prepare": "exit 0",
-    "test": "mocha ./test/** ./test/**/*"
+    "prepare": "yarn run snyk-protect && exit 0",
+    "test": "mocha ./test/** ./test/**/*",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@truffle/artifactor": "^4.0.119",
@@ -80,7 +81,8 @@
     "web3": "1.5.2",
     "web3-utils": "1.5.2",
     "xregexp": "^4.2.4",
-    "yargs": "^8.0.2"
+    "yargs": "^8.0.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@truffle/blockchain-utils": "^0.0.31",
@@ -99,5 +101,6 @@
       "url": "https://github.com/tcoulter"
     }
   ],
-  "namespace": "consensys"
+  "namespace": "consensys",
+  "snyk": true
 }
