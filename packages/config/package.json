@@ -24,7 +24,7 @@
     "@truffle/error": "^0.0.14",
     "@truffle/events": "^0.0.14",
     "@truffle/provider": "^0.2.38",
-    "configstore": "^4.0.0",
+    "configstore": "^5.0.1",
     "find-up": "^2.1.0",
     "lodash.assignin": "^4.2.0",
     "lodash.merge": "^4.6.2",
